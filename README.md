@@ -9,7 +9,6 @@ Main features:
 * lightweights through efficient memory management; 
 * modular approach
 
-
 Follow the [link](http://ops-docs.jelastic.com/private-add-cartridge) in order to find out how to enable the current cartridge at Jelastic dashboard.
 
 ### What Jelastic cartridge is?
