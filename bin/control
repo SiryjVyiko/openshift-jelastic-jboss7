@@ -280,7 +280,7 @@ function start() {
   if isrunning; then
       echo "Application is already running"
   else    
-    ${OPENSHIFT_JBOSSAS_DIR}/versions/7/bin/standalone.sh > ${OPENSHIFT_TMP_DIR}/${cartridge_type}.log 2>&1 &
+    ${JBOSSAS_BIN_DIR}/standalone.sh > ${OPENSHIFT_TMP_DIR}/${cartridge_type}.log 2>&1 &
     PROCESS_ID=$!
     echo "$PROCESS_ID" > ${JBOSSAS_PID_FILE}
 
