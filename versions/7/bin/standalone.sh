@@ -1,1 +1,1 @@
-/opt/repo/standalone.sh
+/opt/repo/bin/standalone.sh
