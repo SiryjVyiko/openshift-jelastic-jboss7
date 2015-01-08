@@ -36,7 +36,7 @@ fi
 # For Cygwin, ensure paths are in UNIX format before anything is touched
 if $cygwin ; then
     [ -n "$JBOSS_HOME" ] &&
-        JBOSS_HOME=`cygpath --unix "$JBOSS_HOME"`
+        JBOSS_HOME="${OPENSHIFT_JBOSSAS_DIR}/versions/7/"
     [ -n "$JAVA_HOME" ] &&
         JAVA_HOME=`cygpath --unix "$JAVA_HOME"`
     [ -n "$JAVAC_JAR" ] &&
@@ -44,7 +44,7 @@ if $cygwin ; then
 fi
 
 # Setup JBOSS_HOME
-RESOLVED_JBOSS_HOME=`cd "$DIRNAME/.."; pwd`
+RESOLVED_JBOSS_HOME=`cd "${OPENSHIFT_JBOSSAS_DIR}/versions/7/"; pwd`
 if [ "x$JBOSS_HOME" = "x" ]; then
     # get the full path (without any relative bits)
     JBOSS_HOME=$RESOLVED_JBOSS_HOME
