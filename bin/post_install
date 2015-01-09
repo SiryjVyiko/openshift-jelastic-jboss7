@@ -1,5 +1,1 @@
 #!/bin/bash -eu
-
-if [ -e /opt/repo/standalone/deployments/ROOT.war ]; then
-  cp /opt/repo/standalone/deployments/ROOT.war /opt/repo/versions/7/standalone/deployments
-fi
