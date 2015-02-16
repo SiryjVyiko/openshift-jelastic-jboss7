@@ -15,3 +15,9 @@ mkdir -p ${OPENSHIFT_JBOSSAS_DIR}/versions/7/{template,standalone/tmp,standalone
 
 # Initialize the JBoss CLI history file
 [ -f ${OPENSHIFT_HOMEDIR}/.jboss-cli-history ] || touch ${OPENSHIFT_HOMEDIR}/.jboss-cli-history
+
+sed -i 's/opt\/repo:\/bin\/bash/opt\/repo\/home:\/bin\/bash/g' "/etc/passwd"
+
+if [ -d "/opt/repo/.ssh" ] ; then
+    mv /opt/repo/.ssh /opt/repo/home/
+fi
